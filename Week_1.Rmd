@@ -1,0 +1,48 @@
+---
+title: "Week 1 Challenge"
+output: pdf_document
+---
+
+Welcome to Week 1 of *Python for COINS Members*. In the last week, you should have sucessfully downloaded Anaconda, setup an IDE, and began studying! This week we are going to hit the ground running by working with ETF price data. 
+
+# Problem description
+
+Your division head has asked you to use python to pull 2 years of the daily closing prices for all of the commodities in your division and put them in a pandas dataframe. 
+
+1. Install the Python package *yfinance*. For help install packages: https://packaging.python.org/tutorials/installing-packages/ To learn more about *yfinance*: https://pypi.org/project/yfinance/
+2. Import the pandas and yfinance packages into your python script as pd and yf.
+3. Using the yf.download function, download at least three ETF price series and assign them to variables. There is an option to pull multiple tickers at once but you may find it easier to pull each ticket individually and assign them to seperate variable names. Set period = "2y". yfinance creates a dataframe of multiple variables for each ticker:Date (which is the dataframe index), Open, High, Low, Close, Adj Close, and Volume. Below is the head data I pulled for WEAT.
+
+```{python, echo = FALSE, warning = FALSE}
+import pandas as pd
+import yfinance as yf
+
+WEAT = yf.download(tickers = 'WEAT', period = '2y')
+print(WEAT.head())
+```
+
+5. We need to combine (concatenate) the 'Close' column for each of our three dataframes to form a single dataframe. Use the pd.concat function. Here is a useful guide: https://kite.com/python/answers/how-to-create-a-pandas-dataframe-from-columns-in-other-dataframes-in-python. 
+6. Your deliverable to your division head should look something like this:
+
+```{python, echo = FALSE, warning = FALSE}
+import pandas as pd
+import yfinance as yf
+
+CORN = yf.download(tickers = 'CORN', period ='2y')
+SOYB = yf.download(tickers = 'SOYB', period = '2y')
+WEAT = yf.download(tickers = 'WEAT', period = '2y')
+
+data = [CORN["Close"], SOYB["Close"], WEAT["Close"]]
+headers = ["Corn", "Soyb", "Weat"]
+df = pd.concat(data, axis = 1, keys = headers)
+
+print(df.head())
+
+```
+
+Subset the data by time
+
+find what percent of time for the last month has it close above the current price
+
+Calculate DoD differences and percent returns
+

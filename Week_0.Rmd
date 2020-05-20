@@ -1,0 +1,93 @@
+---
+title: "Week 0 Challenge"
+output: pdf_document
+---
+
+# Overview 
+Welcome to *Python for COINS Members* a self-study learning structure designed for COINS by COINS. Every week we will provide a goal and *small* project applicable specifically to commodity research. This is structured is designed to **support** a self-study program, not replace it. The provided problems will focus on application, while the learning venue you choose will fill in the theory. Our slack channel will serve as a forum for sharing, discussion, and answering questions. 
+
+
+This is not a class. There are no lectures, no class notes, no slides, and no grades. This is simply a structure to accompany your self study. There is a tremendous amount of free resources for Python online, so why should we recreate material MIT/Harvard/Stanford already provides at no cost? This way you can choose the learning venue which best fits you: an online course, a textbook, or aimlessly searching stack overflow. In addition to venue flexibility, if also give you flexibility in your time. All of our summers look differently then what we thought they would, and I want to be mindful of the fact that some people have other responsibilities. 
+
+# Goals 
+
+If this structure is successful, you will know a popular programming language in the context of data science applied to financial markets. You will have an additional skill set to apply to COINS and your future career. You will be able to think algorithmically and better solve logical puzzles. You will be a better trader and a more attractive recruit.
+
+# Motivation
+
+**Why learn a language?**
+
+* Programming a powerful tool: do more things with greater efficiency
+* More and more jobs in finance are requiring programming skills
+* Learn a new way of thinking: logically and algorithmically
+
+**Why use this structure**
+
+* Learn at your own pace, in your own way
+* Immediately apply what you learn in the context of COINS
+* Learn with friends!
+
+# General outline
+
+Below is a general outline of the learning structure:
+
+* Week 0: Welcome! Get setup with Anaconda, choose a learning format, choose a IDE, Hello World!, and begin studying!
+* Week 1: Data frames, time-series and data sources: Pulling and manipulating financial time series
+* Week 2: Simple data visualizations
+* Week 3: Time-series and data revisited: FRED, EIA, WASDE, Eikon
+* Week 4: Simple Analysis: Correlation, Regression, and Basic Time-series Forecasting
+* Week 5: *Lets see where we are at this point and choose a way forward then*
+
+
+# Week 0 Instructions
+
+The first step is to choose your preferred learning format. Here are some free suggestions: feel free to use multiple. All of them can be found with a simple Google search. By exploring all these options, you will see why we didn't feel the need to create our own material. 
+
+## Books 
+
+* Python for Data Analysis (Written by the creater of Pandas, who worked for two sigma and AQR, finance/time series focusesed. Make sure to get second edition)
+* Python for Data science (Has a large section on ML)
+* Python for Finance
+
+## Online Courses
+* Multiple Course from LinkedIn Learning (formerly Linda); free from VT
+* Python for Data Science and AI: IBM (Coursera)
+* Applied Data science with Python: UMich (Coursera)
+* All the ones from EDx
+
+## Other Resources
+
+* pythonprogramming.net
+* Intro to Computer Science with Python: MIT (less DS more CS)
+* Harvard CS50 
+
+**Tips**
+
+Many people struggle with self studying. We believe that having this COINS learning plan will help enforce structure and motivate learning, but the responsibility is still on you to study. We suggest the following:
+
+* Consistency. When starting out with a programming language (or any foreign language), it is very important that you try and practice every day, even if only for 20 minutes. If you leave the language for too long, you will quickly forget what you have learned. 
+* Set a goal: Have measurable goals for the learning section and the week. Celebrate achieving those goals.
+* Take Breaks: If you are learning from an online class and find yourself struggling to focus on the lectures, take a break and come back.
+* Learning Environment: Programming is not something you can do with only half attention. Find a quiet place and mute your notifications.
+* **Do not struggle alone**, even if it is a simple issue. Ask the rest of the group for help! We are all learning together. When I was beginning to learn Python, I spent an embarrassing time trying to figure out how to get Spyder to update and it almost derailed my whole learning. Don't be like me. 
+
+Some online courses will provide you with an integrated learning environment, a place to code within the class. Regardless, you will need to download python and an Integrated Development Environment (IDE) on your computer. We strongly recommend using Anaconda to do this. https://www.anaconda.com/products/individual  
+
+Once Anaconda is successfully installed you will still have the choose of IDE. Many people choose Jupiter Notebooks. Colburn prefers Spyder (it feels more programmy if that makes sense). It isn't a life or death decision, but whatever you choose, learn the keyboard shortcuts! The IDE will compile and run your code automatically, but it is important you learn to run programs through your command line/terminal. 
+
+
+# Week 0 Problems
+
+* Explore and choose an online resource to learn from
+* Download Anacaonda and set up your IDE
+* Completed Hello World! Project (below)
+* Begin to study from your choosen learning venue
+
+## Hello World!
+
+As is tradition when learnning a new programming lanaguage, the first project is simply to have python print "Hello World". For an additional challenge, prompt the user to input their name, and respond with "Hello [name]!".  Run both programs through your command line. 
+
+# Coming up in Week 1
+
+In Week 1 we will use the *yfinance* package to pull data for multiple commodity ETFs. We will explore and manipulate the time-series in a pandas dataframe. 
+
