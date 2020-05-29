@@ -21,8 +21,7 @@ WEAT = yf.download(tickers = 'WEAT', period = '2y') #download the WEAT ETF for t
 print(WEAT.head()) #display the head of the WEAT dataframe
 ```
 
-5. We need to combine (concatenate) the 'Close' column for each of our three dataframes to form a single dataframe. Use the pd.concat function. Here is a useful guide: https://kite.com/python/answers/how-to-create-a-pandas-dataframe-from-columns-in-other-dataframes-in-python. 
-6. Your deliverable to your division head should look something like this:
+4. We need to combine (concatenate) the 'Close' column for each of our three dataframes to form a single dataframe. Use the pd.concat function. Here is a useful guide: https://kite.com/python/answers/how-to-create-a-pandas-dataframe-from-columns-in-other-dataframes-in-python.  Your deliverable to your division head should look something like this:
 
 ```{python, echo = FALSE, warning = FALSE}
 CORN = yf.download(tickers = 'CORN', period ='2y')
@@ -36,11 +35,11 @@ print(df.head())
 
 ```
 
-7. Your division head has decided to investigate one of the ETFs further (your choice), but a lot has changed in the last two years. She requests that you subset the data to only include from June 2019 forward. 
+5. Your division head has decided to investigate one of the ETFs further (your choice), but a lot has changed in the last two years. She requests that you subset the data to only include from June 2019 forward. 
 
-8. Using subsetted data, find the percent of time the ETF has closed above the current price. 
+6. Using subsetted data, find the percent of time the ETF has closed above the current price. 
 
-9. Calculate the daily percent change for the choosen ETF. What was the largest increase (positive), largest decrease (negative), and largest percent change (absolute)? What was going on during that time which could have driven that price action?
+7. Calculate the daily percent change for the choosen ETF. What was the largest increase (positive), largest decrease (negative), and largest percent change (absolute)? What was going on during that time which could have driven that price action?
 
 
 
