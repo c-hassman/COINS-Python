@@ -1,0 +1,26 @@
+---
+title: "Week 2 Challenge"
+output: pdf_document
+---
+
+Here is the long awaited Week 2 Challenge. This week we will be working to visualize data, building off the skills establish last week. 
+
+# Problem Descriptions
+
+You are tired of going to tradingview every week to get a price graph. You wish to visualize your commodity price series using python so that is updates automatically. 
+
+1. Using yfinance again, pull 1 year of historical price data for your chosen commodity ETF. 
+2. Using Matplotlib, plot a line graph of price series of the closing price of the ETF.
+3. Candlestick charts are a very popular way of looking at price series. You can also include volume. Here is a guide: https://pythonprogramming.net/more-stock-data-manipulation-python-programming-for-finance/  
+4. Play around with the bar sizes using the resample function
+5. Have python export the graph to a folder to be used in your slides
+
+You would now like to compare the daily returns of two closely related ETFS: IAU and SLV. 
+
+5. Using yfinance, pull 2 years of historical price data for IAU and SLV
+6. Calculate the daily percent returns in the two ETFs
+7. Using Matplotlib, create a scatter plot of the returns. Comment on the strength of the relationship.
+8. Create two histograms of daily returns so you may compare them (either overlayed or subplots). How does the volatility of Gold versus Silver compare?
+
+
+
