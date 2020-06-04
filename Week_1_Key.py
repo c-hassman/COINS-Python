@@ -14,8 +14,8 @@ import yfinance as yf
 
 # 3) Import Data from yfinance
 
-CORN = yf.download(tickers = 'CORN', period = '2y') #download the WEAT ETF for the last two years
-SOYB = yf.download(tickers = 'SOYB', period = '2y') #download the WEAT ETF for the last two years
+CORN = yf.download(tickers = 'CORN', period = '2y') #download the CORN ETF for the last two years
+SOYB = yf.download(tickers = 'SOYB', period = '2y') #download the SOYB ETF for the last two years
 WEAT = yf.download(tickers = 'WEAT', period = '2y') #download the WEAT ETF for the last two years
 
 #%%
