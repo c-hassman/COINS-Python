@@ -1,0 +1,8 @@
+---
+title: "Week 3 Challenge"
+output: pdf_document
+---
+
+Welcome to Week 3 Challenge. Asa reminder all the material can be accessed through the COINS Python Github page. Continue to reach out with any questions you have. This week we are looking at pulling data from more data sources. 
+
+# Problem Descriptions
